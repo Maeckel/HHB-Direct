@@ -9,7 +9,7 @@ INSERT INTO type_operation VALUES( 3 , 'VIREMENT' );
 
 INSERT INTO type_compte VALUES( 1 , 'Compte courant' );
 INSERT INTO type_compte VALUES( 2 , 'Livret Epargne' );
-INSERT INTO type_compte VALUES( 3 , 'Compte suppor pour Actions' );
+INSERT INTO type_compte VALUES( 3 , 'Compte support pour Actions' );
 
 INSERT INTO conseiller VALUES( 1 , 'GREEN' , 'Alexandre' , '2022-03-07' );
 INSERT INTO conseiller VALUES( 2 , 'RUBIS' , 'Marie' , '2022-10-14' );
@@ -31,6 +31,10 @@ INSERT INTO client VALUES( 8 , 'RUFUS' , 'John' , 'Paris, 23 rue Manin' , 'bcach
 INSERT INTO client VALUES( 9 , 'TALLER' , 'Sam' , 'Paris, 114 rue Blanche' , 'vcottin' , 'azerty' );
 INSERT INTO client VALUES( 10 , 'GOLD' , 'Luc' , 'Nantes, 134 allée des Joncs' , 'jdebelle' , 'azerty' );
 
+INSERT INTO date VALUES('2020-01-07');
+INSERT INTO date VALUES('2020-04-14');
+INSERT INTO date VALUES('2020-08-23');
+INSERT INTO date VALUES('2020-11-25');
 INSERT INTO date VALUES('2023-01-01');
 INSERT INTO date VALUES('2023-06-01');
 INSERT INTO date VALUES('2023-01-05');
@@ -45,19 +49,26 @@ INSERT INTO date VALUES('2023-08-22');
 INSERT INTO date VALUES('2023-11-27');
 INSERT INTO date VALUES('2023-12-30');
 INSERT INTO date VALUES('2023-06-07');
+INSERT INTO date VALUES('2020-07-11');
+INSERT INTO date VALUES('2020-07-17');
+INSERT INTO date VALUES('2020-07-24');
 
 INSERT INTO compte VALUES(1 , null , 1 , '2023-01-05' , 1000 );
 INSERT INTO compte VALUES(2 , null , 2 , '2023-04-10' , 2000 );
-INSERT INTO compte VALUES(3 , null , 3 , '2023-04-10' , 1500 );
+INSERT INTO compte VALUES(3 , null , 3 , '2023-04-10' , 15000 );
 INSERT INTO compte VALUES(4 , null , 2 , '2023-07-15' , 1500 );
 INSERT INTO compte VALUES(5 , null , 3 , '2023-07-15' , 2000 );
-INSERT INTO compte VALUES(6 , null , 1 , '2023-01-05' , 2000 );
+INSERT INTO compte VALUES(6 , null , 1 , '2023-01-05' , 20000 );
 INSERT INTO compte VALUES(7 , null , 2 , '2023-10-20' , 2000 );
 INSERT INTO compte VALUES(8 , null , 1 , '2023-10-20' , 3000 );
-INSERT INTO compte VALUES(9 , null , 3 , '2023-12-25' , 2500 );
+INSERT INTO compte VALUES(9 , null , 3 , '2023-12-25' , 25000 );
 INSERT INTO compte VALUES(10 , null , 3 , '2023-12-25' , 1000 );
 INSERT INTO compte VALUES(11 , null , 1 , '2023-05-30' , 1500 );
 INSERT INTO compte VALUES(12 , null , 2 , '2023-05-30' , 1500 );
+INSERT INTO compte VALUES(13 , null , 3 , '2020-01-07' , 25000 );
+INSERT INTO compte VALUES(14 , null , 1 , '2020-04-14' , 1000 );
+INSERT INTO compte VALUES(15 , null , 2 , '2020-08-23' , 1500 );
+INSERT INTO compte VALUES(16 , null , 1 , '2020-11-25' , 1500 );
 
 INSERT INTO posseder VALUES( 1 , 2 );
 INSERT INTO posseder VALUES( 2 , 4 );
@@ -71,6 +82,10 @@ INSERT INTO posseder VALUES( 9 , 7 );
 INSERT INTO posseder VALUES( 10 , 9 );
 INSERT INTO posseder VALUES( 11 , 5 );
 INSERT INTO posseder VALUES( 12 , 2 );
+INSERT INTO posseder VALUES( 13 , 1 );
+INSERT INTO posseder VALUES( 14 , 8 );
+INSERT INTO posseder VALUES( 15 , 7 );
+INSERT INTO posseder VALUES( 16 , 4 );
 
 INSERT INTO appeler VALUES( 1 , 2 , '2023-02-17 15:28:00' , '00:10:46' );
 INSERT INTO appeler VALUES( 4 , 1 , '2023-02-17 15:28:00' , '00:10:46' );
@@ -103,6 +118,10 @@ INSERT INTO operation VALUES( 12 , 1 , 12 , '2023-06-07' , null , 150 );
 INSERT INTO operation VALUES( 13 , 1 , 3 , '2023-05-17' , null , 150 );
 INSERT INTO operation VALUES( 14 , 2 , 6 , '2023-02-12' , null , 50 );
 INSERT INTO operation VALUES( 15 , 2 , 9 , '2023-12-30' , null , 50 );
+
+INSERT INTO operation VALUES( 16 , 1 , 13 , '2020-07-11' , null , 500 );
+INSERT INTO operation VALUES( 17 , 1 , 13 , '2020-07-17' , null , 275 );
+INSERT INTO operation VALUES( 18 , 1 , 14 , '2020-07-24' , null , 425 );
 
 INSERT INTO associer VALUES( 7 , 1 );
 INSERT INTO associer VALUES( 8 , 2 );
